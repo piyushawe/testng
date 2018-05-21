@@ -1,8 +1,6 @@
 package testng;
 
-import com.sun.media.sound.AiffFileReader;
-import org.openqa.selenium.TakesScreenshot;
-import org.testng.Assert;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
