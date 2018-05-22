@@ -30,7 +30,7 @@ public class app3 extends App {
     public void test4(@Optional("rama") String name)//this parameter value will be the value mentioned in the xml file but
     // user do not define any parameter for it then default value will be @ Optional
     {
-        System.out.println(name);
+        System.out.println(1/0);
     }
 
     @Test(parameters = "pass" , groups = "hello")
