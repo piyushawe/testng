@@ -4,21 +4,10 @@
     <listeners>
         <listener class-name="testng.Listeners"/>
     </listeners>
+
 <parameter name="testing" value="sita"/>
     <parameter name="pass" value="123"/>
     <test name="test3">
-        <groups>
-            <define name="all">
-                <include name="hello"/>
-                <include name="test"/>
-            </define>
-            <run>
-                <include name="all"/>
-            </run>
-            <dependencies>
-                <group name="hello" depends-on="test"/>
-            </dependencies>
-        </groups>
         <classes>
             <class name="testng.app3"/>
         </classes>

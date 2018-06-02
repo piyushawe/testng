@@ -1,11 +1,10 @@
 package testng;
 
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
+import org.testng.annotations.Listeners;
 
-public class app3 extends App {
+public class app3  {
+
     @DataProvider//If no name attribute is used then name of data provider will be the name of method i.e
     // "dat" in our case
     public Object[][] dat()
@@ -19,10 +18,22 @@ public class app3 extends App {
         return data;
 
     }
-    @Test(groups = {"test"},dependsOnMethods = "test4")
+    @BeforeClass
+    public void bef()
+    {
+        System.out.println("class1");
+    }
+    @BeforeMethod
+    public void met()
+    {
+        System.out.println("method");
+    }
+
+    @Test(groups = {"test"})
         public void test3()
     {
-        System.out.println("Test3");
+        System.out.println("test");
+        System.out.println("test3");
         //System.out.println(pas);
     }
     @Parameters({"testing"})// it takes parameter from Testng.xml defined under parameter tag
@@ -30,12 +41,12 @@ public class app3 extends App {
     public void test4(@Optional("rama") String name)//this parameter value will be the value mentioned in the xml file but
     // user do not define any parameter for it then default value will be @ Optional
     {
-        System.out.println(1/0);
+        System.out.println("test4");
     }
 
-    @Test(parameters = "pass" , groups = "hello")
-    public void test5(int pass)
+    @Test(groups = "hello")
+    public void test5( )
     {
-        System.out.println(pass);
+        System.out.println("test5");
     }
 }

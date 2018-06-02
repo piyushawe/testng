@@ -28,7 +28,7 @@ public class app2 {
     public void test2()
     {
         int i=1/0;
-        System.out.println("test2");
+        System.out.println("test21");
     }
 //    @Test(enabled = false)
 //    public void test5()
