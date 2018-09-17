@@ -22,7 +22,7 @@ public class app3 extends App {
     @Test(groups = {"test"},dependsOnMethods = "test4")
         public void test3()
     {
-        System.out.println("Test3");
+        System.out.println("Test34");
         //System.out.println(pas);
     }
     @Parameters({"testing"})// it takes parameter from Testng.xml defined under parameter tag
