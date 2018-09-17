@@ -10,24 +10,25 @@ import org.testng.annotations.Test;
  *
  */
 public abstract class App {
-    @BeforeClass
-    public void beforeclass()
-    {
-        System.out.println("class");
-
-    }
-
-    @BeforeMethod
-    public void beforemethod()
-    {
-        System.out.println("method");
-    }
-
-    @BeforeTest
-    public void beforetest()
-    {
-        System.out.println("beforetest");
-    }
+    
+//    @BeforeClass
+//    public void beforeclass()
+//    {
+//        System.out.println("class");
+//
+//    }
+//
+//    @BeforeMethod
+//    public void beforemethod()
+//    {
+//        System.out.println("method");
+//    }
+//
+//    @BeforeTest
+//    public void beforetest()
+//    {
+//        System.out.println("beforetest");
+//    }
 
 
 
